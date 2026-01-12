@@ -1,4 +1,4 @@
-import {DynamicFormSchema} from '@/types/formSchema';
+import {DynamicFormSchema} from '@repo/ui/dynamic-form';
 
 export const categoryFinderSchema: DynamicFormSchema = {
   session_id: '181310961-list_omnichannel-37a87f876ece',

@@ -1,15 +1,15 @@
 'use client';
 
 import {FormProvider, useForm} from 'react-hook-form';
-import {DynamicFormSchema, RegisterAndRenderEvent} from '@/types/formSchema';
+// import {DynamicFormSchema, RegisterAndRenderEvent} from '@/types/formSchema';
 import {BrickRenderer} from '@/components/dynamic-form/BrickRenderer';
 
 interface DynamicFormProps {
-  schema: DynamicFormSchema;
+  schema: any;
   defaultValues?: Record<string, unknown>;
 }
 
-const findRootBrick = (events: RegisterAndRenderEvent[]) => {
+const findRootBrick = (events: any[]) => {
   for (const event of events) {
     if (event.type === 'register_and_render') {
       return event.data.brick;

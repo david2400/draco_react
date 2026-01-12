@@ -3,7 +3,7 @@
 import {ChangeEvent, useEffect, useMemo, useState} from 'react';
 import classNames from 'classnames';
 import {Controller, useFormContext} from 'react-hook-form';
-import {SearchByPictureComponentData} from '@/types/formSchema';
+import {SearchByPictureComponentData} from '@repo/ui/dynamic-form';
 
 interface PhotoUploaderProps {
   fieldName: string;

@@ -1,3 +1,4 @@
+"use client"
 import {SubmitHandler} from 'react-hook-form';
 import {validation} from '../schemas/login.schemas';
 import {ILogin} from '../models/login';

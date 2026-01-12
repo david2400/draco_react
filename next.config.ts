@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // swcMinify: true,
   output: 'standalone',
+  transpilePackages: ['@repo/ui'],
 };
 
 export default withNextIntl(nextConfig);

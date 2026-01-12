@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import { ITable } from "@repo/ui/table/models/index";
-import {DataTable} from '@repo/ui/table/scenes';
+import { DataTable } from "@repo/ui/table/scenes";
 import {Card} from '@repo/ui/card/scenes/card';
 
 export const TableBrand = ({headerTable, data, columns}: ITable<any>) => {
