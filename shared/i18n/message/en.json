@@ -86,6 +86,512 @@
     "quantity": "Qty: "
   },
 
+  "GestionAlumnos": {
+    "sectionLabel": "Academic flow",
+    "pageTitle": "Student administration",
+    "pageDescription": "Capture student data, register guardians and connect them in a single workspace.",
+    "students": "Students",
+    "guardians": "Guardians",
+    "relationships": "Links",
+    "studentCardTitle": "Create student",
+    "studentCardDescription": "Basic profile, health data and contact information in un solo paso.",
+    "guardianCardTitle": "Register guardian",
+    "guardianCardDescription": "Collect legal guardian details and their primary contacts.",
+    "familyLinkCardTitle": "Link families",
+    "familyLinkCardDescription": "Associate students with their guardians and define custody roles.",
+    "relationshipCardTitle": "Link families",
+    "relationshipCardDescription": "Associate students with their guardians and define custody roles.",
+    "fields": {
+      "first_name": "First name",
+      "second_name": "Middle name",
+      "first_last_name": "First last name",
+      "second_last_name": "Second last name",
+      "document_type": "Document type",
+      "document_number": "Document number",
+      "birth_date": "Birth date",
+      "gender": "Gender",
+      "grade": "Grade",
+      "blood_type": "Blood type",
+      "eps": "Health provider",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "neighborhood": "Neighborhood",
+      "notes": "Additional notes"
+    },
+    "guardianFields": {
+      "first_name": "First name",
+      "second_name": "Middle name",
+      "last_name": "Last name",
+      "document_type": "Document type",
+      "document_number": "Document number",
+      "email": "Email",
+      "phone": "Primary phone",
+      "phone_alt": "Secondary phone",
+      "address": "Address",
+      "occupation": "Occupation",
+      "company": "Company",
+      "relationship_type": "Relationship to student",
+      "notes": "Notes"
+    },
+    "relationshipFields": {
+      "student_id": "Student",
+      "guardian_id": "Guardian",
+      "relationship_type": "Relationship",
+      "priority": "Contact priority",
+      "custody_level": "Custody level",
+      "start_date": "Start date",
+      "notes": "Observations"
+    },
+    "options": {
+      "document": {
+        "cc": "Citizenship card",
+        "ti": "Identity card",
+        "ce": "Foreigner ID"
+      },
+      "gender": {
+        "female": "Female",
+        "male": "Male",
+        "nonBinary": "Non-binary"
+      },
+      "grade": {
+        "kinder": "Kindergarten",
+        "first": "1st grade",
+        "second": "2nd grade",
+        "third": "3rd grade"
+      },
+      "relationship": {
+        "mother": "Mother",
+        "father": "Father",
+        "grandparent": "Grandparent",
+        "tutor": "Tutor",
+        "other": "Other"
+      },
+      "priority": {
+        "primary": "Primary",
+        "secondary": "Secondary",
+        "occasional": "Occasional"
+      },
+      "custody": {
+        "shared": "Shared",
+        "exclusive": "Exclusive",
+        "temporary": "Temporary"
+      }
+    },
+    "actions": {
+      "saveStudent": "Save student",
+      "saveGuardian": "Save guardian",
+      "saveRelationship": "Link guardians",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "search": "Search",
+      "openSection": "Open section"
+    }
+  },
+
+  "Admisiones": {
+    "preinscripcion": {
+      "title": "Pre-enrollment lead",
+      "description": "Capture interest before the formal application.",
+      "fields": {
+        "lead_name": "Guardian name",
+        "student_name": "Student name",
+        "contact_email": "Email",
+        "contact_phone": "Phone",
+        "prospective_grade": "Target grade",
+        "source": "Lead source",
+        "comments": "Additional notes"
+      }
+    },
+    "inscripcion": {
+      "title": "Application intake",
+      "description": "Formalize the candidate information and documents.",
+      "fields": {
+        "applicant_id": "Applicant ID",
+        "previous_school": "Previous school",
+        "academic_average": "Academic average",
+        "payment_receipt": "Payment receipt",
+        "application_status": "Application status",
+        "observations": "Observations"
+      }
+    },
+    "entrevista": {
+      "title": "Interview log",
+      "description": "Schedule and capture qualitative evaluations.",
+      "fields": {
+        "candidate_id": "Candidate ID",
+        "interviewer": "Interviewer",
+        "interview_date": "Interview date",
+        "modality": "Modality",
+        "location": "Location / Platform",
+        "score": "Score",
+        "recommendation": "Recommendation",
+        "notes": "Notes"
+      }
+    },
+    "documentos": {
+      "title": "Document checklist",
+      "description": "Validate certificates and IDs per candidate.",
+      "fields": {
+        "candidate_id": "Candidate ID",
+        "document_name": "Document name",
+        "document_status": "Status",
+        "received_date": "Received date",
+        "received_by": "Received by",
+        "notes": "Notes"
+      }
+    },
+    "matricula": {
+      "title": "Enrollment confirmation",
+      "description": "Finalize tuition plans and agreements.",
+      "fields": {
+        "student_id": "Student ID",
+        "guardian_id": "Guardian ID",
+        "plan_type": "Plan type",
+        "tuition_value": "Tuition amount",
+        "payment_status": "Payment status",
+        "start_date": "Start date",
+        "agreement_signed": "Agreement signed",
+        "comments": "Comments"
+      }
+    },
+    "options": {
+      "source": {
+        "web": "Website",
+        "referral": "Referral",
+        "event": "Event",
+        "other": "Other"
+      },
+      "application_status": {
+        "pending": "Pending",
+        "in_review": "In review",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "modality": {
+        "onsite": "On-site",
+        "virtual": "Virtual",
+        "phone": "Phone call"
+      },
+      "document_status": {
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "payment_status": {
+        "unpaid": "Unpaid",
+        "partial": "Partial",
+        "paid": "Paid"
+      },
+      "plan_type": {
+        "annual": "Annual",
+        "semester": "Semester",
+        "monthly": "Monthly"
+      },
+      "agreement_signed": {
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "actions": {
+      "savePreinscripcion": "Save pre-enrollment",
+      "saveInscripcion": "Save application",
+      "saveEntrevista": "Save interview",
+      "saveDocumento": "Save document",
+      "saveMatricula": "Save enrollment"
+    }
+  },
+
+  "ControlAcademico": {
+    "layout": {
+      "sectionLabel": "Academic control",
+      "title": "Diagnostic & grading tools",
+      "description": "Configure exams, manage question banks and rubric criteria."
+    },
+    "exams": {
+      "title": "Diagnostic exams",
+      "description": "Create tests linked to question banks and instructions.",
+      "fields": {
+        "name": "Exam name",
+        "code": "Exam code",
+        "subject": "Subject",
+        "grade_level": "Grade level",
+        "scheduled_date": "Scheduled date",
+        "duration": "Duration (minutes)",
+        "instructions": "General instructions",
+        "question_ids": "Question IDs"
+      }
+    },
+    "questions": {
+      "title": "Question bank",
+      "description": "Upload items with options, answers and scoring.",
+      "fields": {
+        "question_text": "Question text",
+        "question_type": "Question type",
+        "question_type_multiple_choice_single": "Single-select multiple choice",
+        "question_type_true_false": "True/False",
+        "question_type_open": "Open response",
+        "options": "Options",
+        "correct_answer": "Correct answer",
+        "max_score": "Max score",
+        "theme_id": "Theme",
+        "difficulty": "Difficulty",
+        "updated_at": "Last updated"
+      }
+    },
+    "criteria": {
+      "title": "Evaluation criteria",
+      "description": "Define rubrics and personalized notes for grading.",
+      "fields": {
+        "name": "Criterion name",
+        "description": "Description",
+        "weight": "Weight (%)",
+        "notes_template": "Personalized notes"
+      }
+    },
+    "themes": {
+      "title": "Question themes",
+      "description": "Organize the library by subject, topic and difficulty.",
+      "fields": {
+        "name": "Theme name",
+        "subject": "Subject",
+        "difficulty": "Difficulty",
+        "description": "Description",
+        "tags": "Keywords"
+      }
+    },
+    "options": {
+      "question_type": {
+        "multiple_choice_single": "Single-select multiple choice",
+        "multiple_choice": "Multiple choice",
+        "true_false": "True/False",
+        "open": "Open response"
+      },
+      "difficulty": {
+        "intro": "Introductory",
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      }
+    },
+    "actions": {
+      "saveExam": "Save exam",
+      "saveQuestion": "Save question",
+      "saveCriterion": "Save criterion",
+      "saveTheme": "Save theme",
+      "bulkSchedule": "Bulk scheduling",
+      "reschedule": "Reschedule"
+    },
+    "classes": {
+      "title": "Weekly classes",
+      "description": "Plan lessons, attendance and content in a single hub.",
+      "subheading": "Coordinators and teachers share a live view of sessions and statuses.",
+      "weekLabel": "Week",
+      "summary": {
+        "totalClasses": "Scheduled classes",
+        "delivered": "Delivered",
+        "pendingAttendance": "Pending attendance"
+      },
+      "filters": {
+        "teacher": "Teacher",
+        "group": "Group",
+        "search": "Search",
+        "searchPlaceholder": "Search by class or group",
+        "allTeachers": "All teachers",
+        "allGroups": "All groups",
+        "weekNavigation": "Navigate weeks",
+        "prevWeek": "Previous",
+        "nextWeek": "Next"
+      },
+      "actions": {
+        "reschedule": "Reschedule"
+      },
+      "modals": {
+        "bulkTitle": "Create classes in bulk",
+        "bulkDescription": "Choose the group, date range and days to auto-generate sessions.",
+        "rescheduleTitle": "Reschedule classes",
+        "rescheduleDescription": "Select impacted classes and preview the suggested changes."
+      },
+      "detail": {
+        "headerLabel": "Class overview",
+        "groupLabel": "Group {group}",
+        "teacherLabel": "Teacher {teacher}",
+        "modality": {
+          "remote": "Remote",
+          "onsite": "On-site"
+        },
+        "roomLabel": "Room {room}",
+        "meetingCta": "Join meeting",
+        "attendance": {
+          "title": "Attendance",
+          "totalPresent": "Total present",
+          "groupAccum": "Group cumulative",
+          "totalSessions": "Total sessions"
+        },
+        "content": {
+          "title": "Content",
+          "planned": "Planned",
+          "delivered": "Delivered",
+          "emptyPlan": "No plan defined",
+          "emptyDelivered": "Not registered"
+        },
+        "students": {
+          "title": "Students",
+          "subtitle": "Group history",
+          "badge": "{count} students",
+          "ratio": "Attendance {attended}/{total}",
+          "empty": "No students registered for this group."
+        }
+      },
+      "calendar": {
+        "title": "Classes by group",
+        "subtitle": "Weekly calendar"
+      },
+      "cta": {
+        "viewAttendance": "Open attendance workspace"
+      },
+      "attendanceView": {
+        "title": "Attendance workspace",
+        "subtitle": "Review session context and capture attendance in real time.",
+        "panelLabel": "Attendance capture",
+        "markAllPresent": "Mark all present",
+        "markAllAbsent": "Mark all absent",
+        "save": "Save attendance",
+        "present": "Present",
+        "absent": "Absent",
+        "backToSchedule": "Back to weekly schedule",
+        "studentsList": "Students",
+        "noStudents": "No students were found for this group.",
+        "updatedAt": "Last update {date}"
+      }
+    }
+  },
+
+  "EstructuraInstitucion": {
+    "classroom": {
+      "title": "Classroom setup",
+      "description": "Define physical spaces, capacity and available resources.",
+      "fields": {
+        "name": "Classroom name",
+        "code": "Code",
+        "building": "Building",
+        "floor": "Floor",
+        "capacity": "Capacity",
+        "resources": "Resources",
+        "description": "Description"
+      },
+      "linkedGroupsLabel": "Linked groups",
+      "linkedGroupsTitle": "Sync existing groups to this classroom",
+      "linkedGroupsDescription": "Attach groups to reuse tutors, shifts and capacity insights without duplicating data.",
+      "metrics": {
+        "totalRooms": "Active rooms",
+        "totalCapacity": "Total capacity",
+        "currentOccupancy": "Current occupancy",
+        "coverage": "Shifts covered",
+        "capacityUsage": "Capacity usage"
+      },
+      "searchPlaceholder": "Search by room, code or building",
+      "filters": {
+        "allStatuses": "All statuses"
+      },
+      "emptyState": "No classrooms meet the current filters. Adjust your search or create a new one.",
+      "noGroupsAttached": "This room has no linked groups yet.",
+      "selectionSummary": "{count} groups linked",
+      "modal": {
+        "createTitle": "Create classroom",
+        "editTitle": "Edit classroom"
+      }
+    },
+    "grade": {
+      "title": "Grade configuration",
+      "description": "Academic level, modality and coordinator in one place.",
+      "fields": {
+        "name": "Grade name",
+        "code": "Grade code",
+        "education_level": "Education level",
+        "coordinator": "Coordinator",
+        "modality": "Modality",
+        "capacity": "Official capacity",
+        "description": "Description"
+      }
+    },
+    "group": {
+      "title": "Group management",
+      "description": "Assign tutors, schedules and classrooms per group.",
+      "fields": {
+        "name": "Group name",
+        "grade_id": "Grade",
+        "tutor": "Tutor",
+        "shift": "Shift",
+        "classroom": "Classroom",
+        "max_students": "Max students",
+        "start_date": "Start date",
+        "notes": "Notes"
+      },
+      "insights": {
+        "totalGroups": "Total groups",
+        "capacity": "Linked capacity",
+        "shifts": "Shifts covered"
+      },
+      "searchPlaceholder": "Search by tutor, grade or shift",
+      "emptyState": "No groups match the current filters. Adjust search or create a new one.",
+      "selectionSummary": "{count} groups linked"
+    },
+    "groupStudent": {
+      "title": "Enroll students in a group",
+      "description": "Track assignments, dates and academic status.",
+      "fields": {
+        "group_id": "Group",
+        "student_id": "Student",
+        "enrollment_date": "Enrollment date",
+        "status": "Status",
+        "notes": "Notes"
+      }
+    },
+    "options": {
+      "education_level": {
+        "preschool": "Preschool",
+        "elementary": "Elementary",
+        "middle": "Middle school",
+        "high": "High school"
+      },
+      "modality": {
+        "onsite": "On-site",
+        "virtual": "Virtual",
+        "hybrid": "Hybrid"
+      },
+      "shift": {
+        "all": "All",
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening"
+      },
+      "classroomStatus": {
+        "active": "Active",
+        "maintenance": "Maintenance",
+        "inactive": "Inactive"
+      },
+      "status": {
+        "active": "Active",
+        "suspended": "Suspended",
+        "graduated": "Graduated"
+      }
+    },
+    "actions": {
+      "saveClassroom": "Save classroom",
+      "saveGrade": "Save grade",
+      "saveGroup": "Save group",
+      "saveGroupStudent": "Add to group",
+      "manageGroups": "Manage groups",
+      "attach": "Attach",
+      "selected": "Selected",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  },
+
   "Menu": {
     "administre": "Manage",
     "category": "Category",
@@ -102,6 +608,9 @@
     "subcategory": "Subcategories - Cygnus Shop",
     "profile": "Profile - Cygnus Shop",
     "products": "Products - Cygnus Shop",
+    "gestion_alumnos": "Student management - Cygnus Shop",
+    "control_academico": "Academic control - Cygnus Shop",
+    "estructura_institucion_classroom": "Institution structure - Classrooms",
     "default": "Cygnus Shop"
   }
 }
