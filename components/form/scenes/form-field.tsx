@@ -26,6 +26,7 @@ export const FormField = ({
   icon,
   size = 'md',
   color: _color,
+  children: _children,
   ...props
 }: IInputProps) => {
   const registerName = typeof props.name === 'string' ? props.name : undefined;

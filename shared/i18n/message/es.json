@@ -89,11 +89,356 @@
     "quantity": "Cantidad: "
   },
 
-  "Menu": {
-    "administre": "Administre",
-    "category": "Categoría",
-    "brand": "Marca",
-    "subcategory": "Subcategoría",
+  "GestionAlumnos": {
+    "sectionLabel": "Flujo académico",
+    "pageTitle": "Gestión de estudiantes",
+    "pageDescription": "Captura estudiantes, registra acudientes y enlázalos en un mismo espacio.",
+    "students": "Estudiantes",
+    "guardians": "Acudientes",
+    "relationships": "Vínculos",
+    "studentCardTitle": "Crear estudiante",
+    "studentCardDescription": "Perfil básico, datos de salud y contacto en una sola etapa.",
+    "guardianCardTitle": "Registrar acudiente",
+    "guardianCardDescription": "Recopila datos del acudiente legal y sus medios de contacto.",
+    "familyLinkCardTitle": "Vincular acudientes",
+    "familyLinkCardDescription": "Asocia estudiantes con sus acudientes y define responsables.",
+    "relationshipCardTitle": "Vincular acudientes",
+    "relationshipCardDescription": "Asocia estudiantes con sus acudientes y define responsables.",
+    "fields": {
+      "first_name": "Primer nombre",
+      "second_name": "Segundo nombre",
+      "first_last_name": "Primer apellido",
+      "second_last_name": "Segundo apellido",
+      "document_type": "Tipo de documento",
+      "document_number": "Número de documento",
+      "birth_date": "Fecha de nacimiento",
+      "gender": "Género",
+      "grade": "Grado",
+      "blood_type": "Tipo de sangre",
+      "eps": "EPS",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "neighborhood": "Barrio",
+      "notes": "Notas adicionales"
+    },
+    "guardianFields": {
+      "first_name": "Primer nombre",
+      "second_name": "Segundo nombre",
+      "last_name": "Apellidos",
+      "document_type": "Tipo de documento",
+      "document_number": "Número de documento",
+      "email": "Correo electrónico",
+      "phone": "Teléfono principal",
+      "phone_alt": "Teléfono alterno",
+      "address": "Dirección",
+      "occupation": "Ocupación",
+      "company": "Empresa",
+      "relationship_type": "Relación con el estudiante",
+      "notes": "Notas"
+    },
+    "relationshipFields": {
+      "student_id": "Estudiante",
+      "guardian_id": "Acudiente",
+      "relationship_type": "Tipo de relación",
+      "priority": "Prioridad de contacto",
+      "custody_level": "Nivel de custodia",
+      "start_date": "Fecha inicio",
+      "notes": "Observaciones"
+    },
+    "options": {
+      "document": {
+        "cc": "Cédula de ciudadanía",
+        "ti": "Tarjeta de identidad",
+        "ce": "Cédula de extranjería"
+      },
+      "gender": {
+        "female": "Femenino",
+        "male": "Masculino",
+        "nonBinary": "No binario"
+      },
+      "grade": {
+        "kinder": "Preescolar",
+        "first": "Primero",
+        "second": "Segundo",
+        "third": "Tercero"
+      },
+      "relationship": {
+        "mother": "Madre",
+        "father": "Padre",
+        "grandparent": "Abuelo/a",
+        "tutor": "Tutor",
+        "other": "Otro"
+      },
+      "priority": {
+        "primary": "Principal",
+        "secondary": "Secundario",
+        "occasional": "Ocasional"
+      },
+      "custody": {
+        "shared": "Compartida",
+        "exclusive": "Exclusiva",
+        "temporary": "Temporal"
+      },
+      "insights": {
+        "totalGroups": "Total de grupos",
+        "capacity": "Capacidad asociada",
+        "shifts": "Turnos cubiertos"
+      },
+      "searchPlaceholder": "Busca por tutor, grado o turno",
+      "emptyState": "No hay grupos que coincidan con los filtros. Ajusta la búsqueda o crea uno nuevo.",
+      "selectionSummary": "{count} grupos enlazados"
+    },
+    "actions": {
+      "saveStudent": "Guardar estudiante",
+      "saveGuardian": "Guardar acudiente",
+      "saveRelationship": "Vincular acudiente",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "search": "Buscar"
+    }
+  },
+
+  "ControlAcademico": {
+    "layout": {
+      "sectionLabel": "Control académico",
+      "title": "Herramientas de exámenes y criterios",
+      "description": "Configura evaluaciones, administra bancos de preguntas y define rúbricas."
+    },
+    "exams": {
+      "title": "Exámenes diagnósticos",
+      "description": "Crea pruebas vinculadas a instrucciones y bancos de preguntas.",
+      "fields": {
+        "name": "Nombre del examen",
+        "code": "Código del examen",
+        "subject": "Asignatura",
+        "grade_level": "Grado",
+        "scheduled_date": "Fecha programada",
+        "duration": "Duración (minutos)",
+        "instructions": "Instrucciones",
+        "question_ids": "Preguntas asociadas"
+      }
+    },
+    "questions": {
+      "title": "Banco de preguntas",
+      "description": "Registra preguntas con opciones, respuestas correctas y puntajes.",
+      "fields": {
+        "question_text": "Enunciado",
+        "question_type": "Tipo de pregunta",
+        "options": "Opciones",
+        "correct_answer": "Respuesta correcta",
+        "max_score": "Puntaje máximo",
+        "theme_id": "Temática",
+        "difficulty": "Dificultad"
+      }
+    },
+    "criteria": {
+      "title": "Criterios de calificación",
+      "description": "Define rúbricas independientes con notas personalizadas.",
+      "fields": {
+        "name": "Nombre del criterio",
+        "description": "Descripción",
+        "weight": "Peso (%)",
+        "notes_template": "Notas personalizadas"
+      }
+    },
+    "themes": {
+      "title": "Temáticas de preguntas",
+      "description": "Organiza la biblioteca por asignatura, tema y dificultad.",
+      "fields": {
+        "name": "Nombre de la temática",
+        "subject": "Asignatura",
+        "difficulty": "Dificultad",
+        "description": "Descripción",
+        "tags": "Palabras clave"
+      }
+    },
+    "options": {
+      "question_type": {
+        "multiple_choice": "Selección múltiple",
+        "true_false": "Verdadero/Falso",
+        "open": "Respuesta abierta"
+      },
+      "difficulty": {
+        "intro": "Introductoria",
+        "basic": "Básica",
+        "intermediate": "Intermedia",
+        "advanced": "Avanzada"
+      }
+    },
+    "actions": {
+      "saveExam": "Guardar evaluación",
+      "saveQuestion": "Guardar pregunta",
+      "saveCriterion": "Guardar criterio",
+      "saveTheme": "Guardar tema",
+      "bulkSchedule": "Programar en bloque",
+      "reschedule": "Reprogramar"
+    },
+    "classes": {
+      "title": "Clases semanales",
+      "description": "Planifica sesiones, asistencia y contenido en un mismo panel.",
+      "subheading": "Coordinadores y docentes comparten una vista en vivo del avance.",
+      "weekLabel": "Semana",
+      "summary": {
+        "totalClasses": "Clases programadas",
+        "delivered": "Dictadas",
+        "pendingAttendance": "Asistencia pendiente"
+      },
+      "filters": {
+        "teacher": "Profesor",
+        "group": "Grupo",
+        "search": "Buscar",
+        "searchPlaceholder": "Busca por clase o grupo",
+        "allTeachers": "Todos los profesores",
+        "allGroups": "Todos los grupos",
+        "weekNavigation": "Navega las semanas",
+        "prevWeek": "Anterior",
+        "nextWeek": "Siguiente"
+      },
+      "modals": {
+        "bulkTitle": "Crear clases en bloque",
+        "bulkDescription": "Elige grupo, rango y días para generar sesiones automáticamente.",
+        "rescheduleTitle": "Reprogramar clases",
+        "rescheduleDescription": "Selecciona las clases afectadas y revisa los cambios sugeridos."
+      },
+      "calendar": {
+        "title": "Clases por grupo",
+        "subtitle": "Calendario semanal"
+      },
+      "cta": {
+        "viewAttendance": "Abrir panel de asistencia"
+      },
+      "attendanceView": {
+        "title": "Panel de asistencia",
+        "subtitle": "Consulta el contexto de la sesión y registra asistencia en tiempo real.",
+        "panelLabel": "Registro de asistencia",
+        "markAllPresent": "Marcar todos presentes",
+        "markAllAbsent": "Marcar todos ausentes",
+        "save": "Guardar asistencia",
+        "present": "Presente",
+        "absent": "Ausente",
+        "backToSchedule": "Volver a calendario semanal",
+        "studentsList": "Estudiantes",
+        "noStudents": "No se encontraron estudiantes para este grupo.",
+        "updatedAt": "Última actualización {date}"
+      }
+    }
+  },
+
+  "EstructuraInstitucion": {
+    "classroom": {
+      "title": "Configuración de aulas",
+      "description": "Define espacios físicos, capacidad y recursos disponibles.",
+      "fields": {
+        "name": "Nombre del aula",
+        "code": "Código",
+        "building": "Bloque",
+        "floor": "Piso",
+        "capacity": "Capacidad",
+        "resources": "Recursos",
+        "description": "Descripción"
+      },
+      "linkedGroupsLabel": "Grupos vinculados",
+      "linkedGroupsTitle": "Sincroniza grupos con esta aula",
+      "linkedGroupsDescription": "Selecciona grupos existentes para monitorear turnos, tutores y ocupación sin duplicar información.",
+      "metrics": {
+        "totalRooms": "Aulas activas",
+        "totalCapacity": "Cupo total",
+        "currentOccupancy": "Ocupación actual",
+        "coverage": "Turnos cubiertos",
+        "capacityUsage": "Uso de capacidad"
+      },
+      "searchPlaceholder": "Busca por aula, código o bloque",
+      "filters": {
+        "allStatuses": "Todos los estados"
+      },
+      "emptyState": "No hay aulas que coincidan con los filtros. Ajusta la búsqueda o crea una nueva.",
+      "noGroupsAttached": "Esta aula aún no tiene grupos asociados.",
+      "selectionSummary": "{count} grupos vinculados",
+      "modal": {
+        "createTitle": "Crear aula",
+        "editTitle": "Editar aula"
+      }
+    },
+    "grade": {
+      "title": "Configuración de grados",
+      "description": "Nivel académico, modalidad y coordinador en un solo lugar.",
+      "fields": {
+        "name": "Nombre del grado",
+        "code": "Código del grado",
+        "education_level": "Nivel educativo",
+        "coordinator": "Coordinador",
+        "modality": "Modalidad",
+        "capacity": "Cupo oficial",
+        "description": "Descripción"
+      }
+    },
+    "group": {
+      "title": "Gestión de grupos",
+      "description": "Asigna tutores, horarios y aulas por grupo.",
+      "fields": {
+        "name": "Nombre del grupo",
+        "grade_id": "Grado",
+        "tutor": "Tutor",
+        "shift": "Jornada",
+        "classroom": "Aula",
+        "max_students": "Estudiantes máximos",
+        "start_date": "Fecha de inicio",
+        "notes": "Notas"
+      }
+    },
+    "groupStudent": {
+      "title": "Asignar estudiantes a un grupo",
+      "description": "Sigue matrículas, fechas y estado académico.",
+      "fields": {
+        "group_id": "Grupo",
+        "student_id": "Estudiante",
+        "enrollment_date": "Fecha de ingreso",
+        "status": "Estado",
+        "notes": "Notas"
+      }
+    },
+    "options": {
+      "education_level": {
+        "preschool": "Preescolar",
+        "elementary": "Básica primaria",
+        "middle": "Básica secundaria",
+        "high": "Media"
+      },
+      "modality": {
+        "onsite": "Presencial",
+        "virtual": "Virtual",
+        "hybrid": "Híbrida"
+      },
+      "shift": {
+        "all": "Todos",
+        "morning": "Mañana",
+        "afternoon": "Tarde",
+        "evening": "Noche"
+      },
+      "classroomStatus": {
+        "active": "Activa",
+        "maintenance": "Mantenimiento",
+        "inactive": "Inactiva"
+      },
+      "status": {
+        "active": "Activo",
+        "suspended": "Suspendido",
+        "graduated": "Graduado"
+      }
+    },
+    "actions": {
+      "saveClassroom": "Guardar aula",
+      "saveGrade": "Guardar grado",
+      "saveGroup": "Guardar grupo",
+      "saveGroupStudent": "Agregar al grupo",
+      "manageGroups": "Gestionar grupos",
+      "attach": "Vincular",
+      "selected": "Seleccionado",
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
     "docs": "Documentación"
   },
 
@@ -105,6 +450,8 @@
     "subcategory": "Subcategorías - Cygnus Shop",
     "profile": "Perfil - Cygnus Shop",
     "products": "Productos - Cygnus Shop",
+    "gestion_alumnos": "Gestión de estudiantes - Cygnus Shop",
+    "control_academico": "Control académico - Cygnus Shop",
     "default": "Cygnus Shop"
   }
 }
