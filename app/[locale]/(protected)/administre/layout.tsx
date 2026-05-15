@@ -19,6 +19,14 @@ export default async function AdministreLayout({
         { label: "brand", href: "/administre/brand" },
         { label: "subcategory", href: "/administre/subcategory" },
         { label: "productos", href: "/administre/products" },
+        {
+          label: "logistics",
+          options: [
+            { label: "overview", href: "/administre/logistics" },
+            { label: "carriers", href: "/administre/logistics/carriers" },
+            { label: "routes", href: "/administre/logistics/routes" },
+          ],
+        },
       ],
     },
     {
